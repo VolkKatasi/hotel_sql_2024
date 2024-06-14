@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static WindowsFormsApp1.Languages;
 
 namespace WindowsFormsApp1
 {
@@ -16,7 +17,9 @@ namespace WindowsFormsApp1
         public Form1()
         {
             InitializeComponent();
-
+            label1.Text = Program.lang.data.Autorization.Autorizat;
+            textBox1.Text = Program.lang.data.Autorization.Login;
+            textBox2.Text = Program.lang.data.Autorization.Password;
         }
 
         private void textBox1_MouseDown(object sender, MouseEventArgs e)

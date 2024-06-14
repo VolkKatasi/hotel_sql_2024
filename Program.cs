@@ -8,9 +8,8 @@ namespace WindowsFormsApp1
 {
     internal static class Program
     {
-        /// <summary>
-        /// Главная точка входа для приложения.
-        /// </summary>
+        static public Languages lang = new Languages();
+
         [STAThread]
         static void Main()
         {
