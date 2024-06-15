@@ -38,6 +38,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -156,13 +157,12 @@
     <Compile Include="vopros.Designer.cs">
       <DependentUpon>vopros.cs</DependentUpon>
     </Compile>
-    <Compile Include="Запрос.cs" />
-    <Compile Include="Запрос1.cs" />
     <EmbeddedResource Include="---.resx">
       <DependentUpon>---.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
@@ -199,6 +199,12 @@
     <EmbeddedResource Include="vopros.resx">
       <DependentUpon>vopros.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Languages\en.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Languages\ru.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

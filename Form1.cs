@@ -17,9 +17,11 @@ namespace WindowsFormsApp1
         public Form1()
         {
             InitializeComponent();
-            label1.Text = Program.lang.data.Autorization.Autorizat;
-            textBox1.Text = Program.lang.data.Autorization.Login;
-            textBox2.Text = Program.lang.data.Autorization.Password;
+            label1.Text = Program.lang.GetLang().Autorization.Autorizat;
+            textBox1.Text = Program.lang.GetLang().Autorization.Login;
+            textBox2.Text = Program.lang.GetLang().Autorization.Password;
+            button1.Text = Program.lang.GetLang().Autorization.Voiti;
+            linkLabel1.Text = Program.lang.GetLang().Autorization.Create;
         }
 
         private void textBox1_MouseDown(object sender, MouseEventArgs e)
@@ -46,8 +48,9 @@ namespace WindowsFormsApp1
         private void linkLabel1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form2 Form2 = new Form2();
-            Form2.Show();
+            Form2 frm = new Form2();
+            frm.FormClosed += (Object, FormClosedEventArgs) => this.Show();
+            frm.Show();
         }
     }
 }
