@@ -42,7 +42,8 @@ namespace WindowsFormsApp1
 
         private void label1_Click(object sender, EventArgs e)
         {
-            
+            Bron bron = new Bron();
+            bron.Show();
         }
 
         private void linkLabel1_Click(object sender, EventArgs e)
@@ -51,6 +52,11 @@ namespace WindowsFormsApp1
             Form2 frm = new Form2();
             frm.FormClosed += (Object, FormClosedEventArgs) => this.Show();
             frm.Show();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
