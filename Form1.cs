@@ -42,6 +42,7 @@ namespace WindowsFormsApp1
 
         private void label1_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Bron bron = new Bron();
             bron.Show();
         }
