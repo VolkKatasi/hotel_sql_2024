@@ -15,6 +15,11 @@ namespace WindowsFormsApp1
         public Form2()
         {
             InitializeComponent();
+            label1.Text = Program.lang.GetLang().Registations.title;
+            textBox1.Text = Program.lang.GetLang().Registations.pochta;
+            textBox2.Text = Program.lang.GetLang().Registations.pass;
+            textBox3.Text = Program.lang.GetLang().Registations.pass_two;
+            button1.Text = Program.lang.GetLang().Registations.button;
         }
 
         private void textBox1_MouseDown(object sender, MouseEventArgs e)

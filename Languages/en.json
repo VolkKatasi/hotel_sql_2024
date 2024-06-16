@@ -5,5 +5,12 @@
 		"Password": "password",
 		"Voiti": "enter",
 		"Create": "Create an account"
+	},
+	"Registations": {
+		"title": "Registration",
+		"pochta": "e-mail",
+		"pass": "password",
+		"pass_two": "repeat the password",
+		"button": "ОК"
 	}
 }

@@ -16,6 +16,16 @@ namespace WindowsFormsApp1
         public class Lang
         {
             public Autorization Autorization { get; set; }
+            public Registration Registations { get; set; }
+        }
+
+        public class Registration
+        {
+            public string title { get; set; }
+            public string pochta { get; set; }
+            public string pass { get; set; }
+            public string pass_two { get; set; }
+            public string button { get; set; }
         }
 
         public class Autorization
