@@ -42,13 +42,16 @@ namespace WindowsFormsApp1
 
         private void label1_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            
             Bron bron = new Bron();
             bron.Show();
         }
 
         private void linkLabel1_Click(object sender, EventArgs e)
         {
+            
+            Form2 Form2 = new Form2();
+            Form2.Show();
             this.Hide();
             Form2 frm = new Form2();
             frm.FormClosed += (Object, FormClosedEventArgs) => this.Show();
