@@ -80,7 +80,10 @@ namespace WindowsFormsApp1
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-
+            requests form4 = new requests(m_nID);
+            this.Hide();
+            form4.FormClosed += (Object, FormClosedEventArgs) => { langInit(); this.Show(); };
+            form4.Show();
         }
     }
 }

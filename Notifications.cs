@@ -14,11 +14,6 @@ namespace WindowsFormsApp1
 {
     public partial class Notifications : Form
     {
-        public class db
-        {
-            public string msg;
-            public string date;
-        }
         public Notifications()
         {
             InitializeComponent();
@@ -34,7 +29,6 @@ namespace WindowsFormsApp1
                     {
                         string[] row = { ex.GetString(0), ex.GetString(1) };
                         dataGridView1.Rows.Add(row);
-
                     }
                 }
             }

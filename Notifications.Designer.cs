@@ -28,14 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Notifications));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dbBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.msg = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.data = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -57,10 +54,6 @@
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(765, 376);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // dbBindingSource
-            // 
-            this.dbBindingSource.DataSource = typeof(WindowsFormsApp1.Notifications.db);
             // 
             // msg
             // 
@@ -88,7 +81,6 @@
             this.Name = "Notifications";
             this.Text = "Notifications";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -96,7 +88,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.BindingSource dbBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn msg;
         private System.Windows.Forms.DataGridViewTextBoxColumn data;
     }
