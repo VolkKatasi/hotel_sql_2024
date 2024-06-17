@@ -46,6 +46,7 @@ namespace WindowsFormsApp1
             public string label4 { get; set; }
             public string label5 { get; set; }
 
+
         }
 
         public string curLang { get; set; } = "ru";

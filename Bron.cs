@@ -25,6 +25,7 @@ namespace WindowsFormsApp1
             this.Text = Program.lang.GetLang().Bron.title;
             label5.Text = Program.lang.GetLang().Bron.label5;
             this.Text = Program.lang.GetLang().Bron.title;
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
