@@ -42,6 +42,12 @@ namespace WindowsFormsApp1
             m_nID = ID;
             InitializeComponent();
             loadDate();
+
+            this.Text = Program.lang.GetLang().Requents.wtitle;
+            dataGridView1.Columns[1].HeaderText = Program.lang.GetLang().Requents.req;
+            dataGridView1.Columns[2].HeaderText = Program.lang.GetLang().Requents.ans;
+            label1.Text = Program.lang.GetLang().Requents.create_req;
+            button1.Text = Program.lang.GetLang().Requents.send;
         }
 
         private void button1_Click(object sender, EventArgs e)

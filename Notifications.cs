@@ -17,8 +17,11 @@ namespace WindowsFormsApp1
         public Notifications()
         {
             InitializeComponent();
-            //string[] row = { "Внимание!", "17.06.2024 21:45" };
-            //dataGridView1.Rows.Add(row); 
+
+            this.Text = Program.lang.GetLang().Notifications.wtitle;
+            dataGridView1.Columns[0].HeaderText = Program.lang.GetLang().Notifications.msg;
+            dataGridView1.Columns[1].HeaderText = Program.lang.GetLang().Notifications.date;
+
             using (var connection = new SqliteConnection("Data Source=db/hotel.db"))
             {
                 connection.Open();

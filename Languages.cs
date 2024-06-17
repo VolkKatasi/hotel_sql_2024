@@ -18,6 +18,8 @@ namespace WindowsFormsApp1
             public Autorization Autorization { get; set; }
             public Registration Registations { get; set; }
             public Bron Bron { get; set; }
+            public Notif Notifications {  get; set; }
+            public Req Requents { get; set; }
         }
 
         public class Registration
@@ -41,9 +43,22 @@ namespace WindowsFormsApp1
         {
             public string title { get; set; }
             public string label2 { get; set; }
-            public string label3 { get; set; }
             public string label4 { get; set; }
             public string label5 { get; set; }
+        }
+        public class Notif
+        {
+            public string wtitle { get; set; }
+            public string msg { get; set; }
+            public string date { get; set; }
+        }
+        public class Req
+        {
+            public string wtitle { get; set; }
+            public string req { get; set; }
+            public string ans { get; set; }
+            public string create_req { get; set; }
+            public string send { get; set; }
         }
 
         public string curLang { get; set; } = "ru";

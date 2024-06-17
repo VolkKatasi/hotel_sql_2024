@@ -16,9 +16,20 @@
 	"Bron": {
 		"label1": "Ask a question",
 		"title": "Booking",
-		"label2": "Hotels",
-		"label3": "To book",
+		"label2": "Rooms",
 		"label4": "My bookings",
 		"label5": "Book a taxi"
+	},
+	"Notifications": {
+		"wtitle": "Notifications",
+		"msg": "Messages",
+		"date": "Date"
+	},
+	"Requents": {
+		"wtitle": "Requests",
+		"req": "Request",
+		"ans": "Answer",
+		"create_req": "Create a request:",
+		"send": "Send"
 	}
 }

@@ -16,9 +16,8 @@ namespace WindowsFormsApp1
         {
             this.Text = Program.lang.GetLang().Bron.title;
             tabControl1.TabPages[0].Text = Program.lang.GetLang().Bron.label2;
-            tabControl1.TabPages[1].Text = Program.lang.GetLang().Bron.label3;
-            tabControl1.TabPages[2].Text = Program.lang.GetLang().Bron.label4;
-            tabControl1.TabPages[3].Text = Program.lang.GetLang().Bron.label5;
+            tabControl1.TabPages[1].Text = Program.lang.GetLang().Bron.label4;
+            tabControl1.TabPages[2].Text = Program.lang.GetLang().Bron.label5;
         }
 
         private readonly int m_nID;
