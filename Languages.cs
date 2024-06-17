@@ -39,14 +39,11 @@ namespace WindowsFormsApp1
         }
         public class Bron
         {
-            public string label1 { get; set; }
             public string title { get; set; }
             public string label2 { get; set; }
             public string label3 { get; set; }
             public string label4 { get; set; }
             public string label5 { get; set; }
-
-
         }
 
         public string curLang { get; set; } = "ru";
