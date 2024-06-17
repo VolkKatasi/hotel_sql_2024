@@ -35,14 +35,15 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.msg = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.data = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dateTaxi = new System.Windows.Forms.DateTimePicker();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.nomer = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.count = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -53,9 +54,8 @@
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.nomer = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.count = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.msg = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.data = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -63,9 +63,9 @@
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabPage1.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -150,22 +150,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(751, 145);
             this.dataGridView1.TabIndex = 4;
             // 
-            // msg
-            // 
-            this.msg.FillWeight = 42.93785F;
-            this.msg.HeaderText = "Сообщения";
-            this.msg.Name = "msg";
-            this.msg.ReadOnly = true;
-            this.msg.Width = 560;
-            // 
-            // data
-            // 
-            this.data.FillWeight = 157.0622F;
-            this.data.HeaderText = "Дата";
-            this.data.Name = "data";
-            this.data.ReadOnly = true;
-            this.data.Width = 150;
-            // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -227,6 +211,41 @@
             this.tabPage3.Size = new System.Drawing.Size(773, 340);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Мои бронирования";
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AllowUserToAddRows = false;
+            this.dataGridView2.AllowUserToDeleteRows = false;
+            this.dataGridView2.AllowUserToResizeColumns = false;
+            this.dataGridView2.AllowUserToResizeRows = false;
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView2.BackgroundColor = System.Drawing.Color.LightBlue;
+            this.dataGridView2.ColumnHeadersHeight = 35;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.nomer,
+            this.count});
+            this.dataGridView2.Location = new System.Drawing.Point(10, 12);
+            this.dataGridView2.MultiSelect = false;
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.ReadOnly = true;
+            this.dataGridView2.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dataGridView2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView2.Size = new System.Drawing.Size(751, 312);
+            this.dataGridView2.TabIndex = 5;
+            // 
+            // nomer
+            // 
+            this.nomer.HeaderText = "Номер";
+            this.nomer.Name = "nomer";
+            this.nomer.ReadOnly = true;
+            // 
+            // count
+            // 
+            this.count.HeaderText = "Кол-во людей";
+            this.count.Name = "count";
+            this.count.ReadOnly = true;
             // 
             // tabPage1
             // 
@@ -364,40 +383,21 @@
             this.tabControl1.Size = new System.Drawing.Size(781, 378);
             this.tabControl1.TabIndex = 18;
             // 
-            // dataGridView2
+            // msg
             // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.AllowUserToDeleteRows = false;
-            this.dataGridView2.AllowUserToResizeColumns = false;
-            this.dataGridView2.AllowUserToResizeRows = false;
-            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.LightBlue;
-            this.dataGridView2.ColumnHeadersHeight = 35;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.nomer,
-            this.count});
-            this.dataGridView2.Location = new System.Drawing.Point(10, 12);
-            this.dataGridView2.MultiSelect = false;
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dataGridView2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView2.Size = new System.Drawing.Size(751, 312);
-            this.dataGridView2.TabIndex = 5;
+            this.msg.FillWeight = 42.93785F;
+            this.msg.HeaderText = "Место отбытия";
+            this.msg.Name = "msg";
+            this.msg.ReadOnly = true;
+            this.msg.Width = 560;
             // 
-            // nomer
+            // data
             // 
-            this.nomer.HeaderText = "Номер";
-            this.nomer.Name = "nomer";
-            this.nomer.ReadOnly = true;
-            // 
-            // count
-            // 
-            this.count.HeaderText = "Кол-во людей";
-            this.count.Name = "count";
-            this.count.ReadOnly = true;
+            this.data.FillWeight = 157.0622F;
+            this.data.HeaderText = "Дата";
+            this.data.Name = "data";
+            this.data.ReadOnly = true;
+            this.data.Width = 150;
             // 
             // Bron
             // 
@@ -424,9 +424,9 @@
             this.tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.tabPage1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -447,8 +447,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn msg;
-        private System.Windows.Forms.DataGridViewTextBoxColumn data;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.LinkLabel linkLabel2;
@@ -460,5 +458,7 @@
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomer;
         private System.Windows.Forms.DataGridViewTextBoxColumn count;
+        private System.Windows.Forms.DataGridViewTextBoxColumn msg;
+        private System.Windows.Forms.DataGridViewTextBoxColumn data;
     }
 }
