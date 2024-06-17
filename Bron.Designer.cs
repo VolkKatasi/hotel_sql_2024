@@ -116,6 +116,7 @@
             this.label1.Size = new System.Drawing.Size(158, 25);
             this.label1.TabIndex = 6;
             this.label1.Text = "Задать вопрос";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox6
             // 
@@ -200,6 +201,7 @@
             this.label2.Size = new System.Drawing.Size(120, 25);
             this.label2.TabIndex = 17;
             this.label2.Text = "Гостиницы";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Bron
             // 
@@ -222,7 +224,8 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Bron";
-            this.Text = "Form4";
+            this.Text = "Бронирование";
+            this.Load += new System.EventHandler(this.Bron_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

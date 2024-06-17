@@ -17,6 +17,7 @@ namespace WindowsFormsApp1
         {
             public Autorization Autorization { get; set; }
             public Registration Registations { get; set; }
+            public Bron Bron { get; set; }
         }
 
         public class Registration
@@ -35,6 +36,17 @@ namespace WindowsFormsApp1
             public string Password { get; set; }
             public string Voiti { get; set; }
             public string Create { get; set; }
+        }
+        public class Bron
+        {
+            public string label1 { get; set; }
+            public string title { get; set; }
+            public string label2 { get; set; }
+            public string label3 { get; set; }
+            public string label4 { get; set; }
+            public string label5 { get; set; }
+
+
         }
 
         public string curLang { get; set; } = "ru";
