@@ -8,9 +8,9 @@
 	},
 	"Registations": {
 		"title": "Registration",
-		"pochta": "e-mail",
-		"pass": "password",
-		"pass_two": "repeat the password",
+		"pochta": "Login:",
+		"pass": "Password:",
+		"pass_two": "Repeat the password:",
 		"button": "ОК"
 	},
 	"Bron": {
@@ -20,6 +20,5 @@
 		"label3": "For a business trip",
 		"label4": "My bookings",
 		"label5": "Book a taxi"
-
 	}
 }
