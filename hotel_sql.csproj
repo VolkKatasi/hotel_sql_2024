@@ -109,12 +109,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="---.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="---.Designer.cs">
-      <DependentUpon>---.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,12 +126,6 @@
     </Compile>
     <Compile Include="Bron.Designer.cs">
       <DependentUpon>Bron.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form4.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
     </Compile>
     <Compile Include="info.cs">
       <SubType>Form</SubType>
@@ -169,15 +157,6 @@
     <Compile Include="Settings.Designer.cs">
       <DependentUpon>Settings.cs</DependentUpon>
     </Compile>
-    <Compile Include="vopros.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="vopros.Designer.cs">
-      <DependentUpon>vopros.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="---.resx">
-      <DependentUpon>---.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -187,9 +166,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Bron.resx">
       <DependentUpon>Bron.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="info.resx">
       <DependentUpon>info.cs</DependentUpon>
@@ -213,9 +189,6 @@
     <EmbeddedResource Include="Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="vopros.resx">
-      <DependentUpon>vopros.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="content\net40\App.config" />
     <None Include="db\hotel.db">
