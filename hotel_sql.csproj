@@ -127,11 +127,35 @@
     <Compile Include="Bron.Designer.cs">
       <DependentUpon>Bron.cs</DependentUpon>
     </Compile>
-    <Compile Include="info.cs">
+    <Compile Include="infoEko.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="info.Designer.cs">
-      <DependentUpon>info.cs</DependentUpon>
+    <Compile Include="infoEko.Designer.cs">
+      <DependentUpon>infoEko.cs</DependentUpon>
+    </Compile>
+    <Compile Include="infoLux.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="infoLux.Designer.cs">
+      <DependentUpon>infoLux.cs</DependentUpon>
+    </Compile>
+    <Compile Include="infoPrem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="infoPrem.Designer.cs">
+      <DependentUpon>infoPrem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="infoKomf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="infoKomf.Designer.cs">
+      <DependentUpon>infoKomf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="infoStandart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="infoStandart.Designer.cs">
+      <DependentUpon>infoStandart.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\NiceButton.cs">
       <SubType>Component</SubType>
@@ -167,8 +191,20 @@
     <EmbeddedResource Include="Bron.resx">
       <DependentUpon>Bron.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="info.resx">
-      <DependentUpon>info.cs</DependentUpon>
+    <EmbeddedResource Include="infoEko.resx">
+      <DependentUpon>infoEko.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="infoLux.resx">
+      <DependentUpon>infoLux.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="infoPrem.resx">
+      <DependentUpon>infoPrem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="infoKomf.resx">
+      <DependentUpon>infoKomf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="infoStandart.resx">
+      <DependentUpon>infoStandart.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Notifications.resx">
       <DependentUpon>Notifications.cs</DependentUpon>
