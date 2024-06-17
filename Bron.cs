@@ -16,16 +16,21 @@ namespace WindowsFormsApp1
         {
             this.Text = Program.lang.GetLang().Bron.title;
             label1.Text = Program.lang.GetLang().Bron.label1;
-            label2.Text = Program.lang.GetLang().Bron.label2;
-            label3.Text = Program.lang.GetLang().Bron.label3;
-            label4.Text = Program.lang.GetLang().Bron.label4;
-            label5.Text = Program.lang.GetLang().Bron.label5;
+
+            tabControl1.TabPages[0].Text = Program.lang.GetLang().Bron.label2;
+            tabControl1.TabPages[1].Text = Program.lang.GetLang().Bron.label3;
+            tabControl1.TabPages[2].Text = Program.lang.GetLang().Bron.label4;
+            tabControl1.TabPages[3].Text = Program.lang.GetLang().Bron.label5;
         }
 
-        public Bron()
+        private readonly int m_nID;
+        public Bron(int ID)
         {
+            m_nID = ID;
             InitializeComponent();
             langInit();
+
+            //tabControl1.TabPages[2].
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

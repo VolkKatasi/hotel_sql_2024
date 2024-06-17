@@ -52,13 +52,13 @@ namespace WindowsFormsApp1
             using (var connection = new SqliteConnection("Data Source=db/hotel.db"))
             {
                 connection.Open();
-                SqliteCommand cmd = new SqliteCommand($"select Password from Users where Login like \"{textBox1.Text}\";", connection);
+                SqliteCommand cmd = new SqliteCommand($"select Password, Id from Users where Login like \"{textBox1.Text}\";", connection);
                 using (var ex = cmd.ExecuteReader())
                 {
                     if (ex.HasRows && ex.GetString(0) == textBox2.Text)
                     {
                         this.Hide();
-                        Bron bron = new Bron();
+                        Bron bron = new Bron(ex.GetInt32(1));
                         bron.FormClosed += (Object, FormClosedEventArgs) => { langInit(); this.Show(); };
                         bron.Show();
                     }
