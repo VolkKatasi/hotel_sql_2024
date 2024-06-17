@@ -168,6 +168,7 @@
             this.label5.Size = new System.Drawing.Size(227, 25);
             this.label5.TabIndex = 14;
             this.label5.Text = "Забронировать такси";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
