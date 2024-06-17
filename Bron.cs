@@ -12,26 +12,28 @@ namespace WindowsFormsApp1
 {
     public partial class Bron : Form
     {
+        private void langInit()
+        {
+            this.Text = Program.lang.GetLang().Bron.title;
+            label1.Text = Program.lang.GetLang().Bron.label1;
+            label2.Text = Program.lang.GetLang().Bron.label2;
+            label3.Text = Program.lang.GetLang().Bron.label3;
+            label4.Text = Program.lang.GetLang().Bron.label4;
+            label5.Text = Program.lang.GetLang().Bron.label5;
+        }
+
         public Bron()
         {
             InitializeComponent();
-            label1.Text = Program.lang.GetLang().Bron.label1;
-            this.Text = Program.lang.GetLang().Bron.title;
-            label2.Text = Program.lang.GetLang().Bron.label2;
-            this.Text = Program.lang.GetLang().Bron.title;
-            label3.Text = Program.lang.GetLang().Bron.label3;
-            this.Text = Program.lang.GetLang().Bron.title;
-            label4.Text = Program.lang.GetLang().Bron.label4;
-            this.Text = Program.lang.GetLang().Bron.title;
-            label5.Text = Program.lang.GetLang().Bron.label5;
-            this.Text = Program.lang.GetLang().Bron.title;
-
+            langInit();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             
             Settings settings = new Settings();
+            this.Hide();
+            settings.FormClosed += (Object, FormClosedEventArgs) => { langInit(); this.Show(); };
             settings.Show();
         }
 
