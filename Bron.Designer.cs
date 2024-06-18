@@ -35,6 +35,8 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.msg = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.data = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -54,8 +56,6 @@
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.msg = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.data = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -150,6 +150,22 @@
             this.dataGridView1.Size = new System.Drawing.Size(751, 145);
             this.dataGridView1.TabIndex = 4;
             // 
+            // msg
+            // 
+            this.msg.FillWeight = 42.93785F;
+            this.msg.HeaderText = "Место отбытия";
+            this.msg.Name = "msg";
+            this.msg.ReadOnly = true;
+            this.msg.Width = 560;
+            // 
+            // data
+            // 
+            this.data.FillWeight = 157.0622F;
+            this.data.HeaderText = "Дата";
+            this.data.Name = "data";
+            this.data.ReadOnly = true;
+            this.data.Width = 150;
+            // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -193,7 +209,7 @@
             // 
             // dateTaxi
             // 
-            this.dateTaxi.CustomFormat = "dd.mm.yyyy HH:MM";
+            this.dateTaxi.CustomFormat = "dd.MM.yyyy HH:mm";
             this.dateTaxi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.dateTaxi.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTaxi.Location = new System.Drawing.Point(543, 220);
@@ -382,22 +398,6 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(781, 378);
             this.tabControl1.TabIndex = 18;
-            // 
-            // msg
-            // 
-            this.msg.FillWeight = 42.93785F;
-            this.msg.HeaderText = "Место отбытия";
-            this.msg.Name = "msg";
-            this.msg.ReadOnly = true;
-            this.msg.Width = 560;
-            // 
-            // data
-            // 
-            this.data.FillWeight = 157.0622F;
-            this.data.HeaderText = "Дата";
-            this.data.Name = "data";
-            this.data.ReadOnly = true;
-            this.data.Width = 150;
             // 
             // Bron
             // 
