@@ -138,13 +138,13 @@ namespace WindowsFormsApp1
                     connection.Open();
                     SqliteCommand cmd = new SqliteCommand($"INSERT INTO taxi (f_id, mesto, date) Values (\"{m_nID}\", \"{textBox1.Text}\", \"{dateTaxi.Text}\");", connection);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Такси приедет в назначенное место и довезёт вас до отеля!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(Program.lang.GetLang().Taxi.msg_success, "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     loadTaxiDate();
                 }
             }
             else
             {
-                MessageBox.Show("Введите куда надо будет подъехать такси", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Program.lang.GetLang().Taxi.msg_empty, "", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

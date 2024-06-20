@@ -68,6 +68,8 @@ namespace WindowsFormsApp1
             public string deep_r { get; set; }
             public string time_deep { get; set; }
             public string booking { get; set; }
+            public string msg_empty { get; set; }
+            public string msg_success { get; set; }
         }
         
         public string curLang { get; set; } = "ru";
