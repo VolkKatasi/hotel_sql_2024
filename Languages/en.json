@@ -31,5 +31,12 @@
 		"ans": "Answer",
 		"create_req": "Create a request:",
 		"send": "Send"
+	},
+	"Taxi": {
+		"deep": "Place of departure",
+		"date": "Date",
+		"deep_r": "The place to pick up from",
+		"time_deep": "Entrance time",
+		"booking": "To book"
 	}
 }

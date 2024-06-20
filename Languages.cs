@@ -20,6 +20,7 @@ namespace WindowsFormsApp1
             public Bron Bron { get; set; }
             public Notif Notifications {  get; set; }
             public Req Requents { get; set; }
+            public Taxi Taxi { get; set; }
         }
 
         public class Registration
@@ -60,7 +61,15 @@ namespace WindowsFormsApp1
             public string create_req { get; set; }
             public string send { get; set; }
         }
-
+        public class Taxi
+        {
+            public string deep { get; set; }
+            public string date { get; set; }
+            public string deep_r { get; set; }
+            public string time_deep { get; set; }
+            public string booking { get; set; }
+        }
+        
         public string curLang { get; set; } = "ru";
         public List<string> arrLang { get; set; } = new List<string>();
         private Dictionary<string, Lang> data { get; set; } = new Dictionary<string, Lang>();

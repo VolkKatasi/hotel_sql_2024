@@ -19,6 +19,13 @@ namespace WindowsFormsApp1
             tabControl1.TabPages[0].Text = Program.lang.GetLang().Bron.label2;
             tabControl1.TabPages[1].Text = Program.lang.GetLang().Bron.label4;
             tabControl1.TabPages[2].Text = Program.lang.GetLang().Bron.label5;
+
+            // Taxi
+            dataGridView1.Columns[0].HeaderText = Program.lang.GetLang().Taxi.deep;
+            dataGridView1.Columns[1].HeaderText = Program.lang.GetLang().Taxi.date;
+            label2.Text = Program.lang.GetLang().Taxi.deep_r;
+            label1.Text = Program.lang.GetLang().Taxi.time_deep;
+            button1.Text = Program.lang.GetLang().Taxi.booking;
         }
 
         private readonly int m_nID;
